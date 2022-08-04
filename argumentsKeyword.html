@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating arguments keyword in js....</title>
+</head>
+<body>
+    <script type="text/javascript">
+    function Test(){
+        //arguments //automatically create arguments when we define fun in js but this fun arg is diff from addvalue fun arg
+        //individual fun has individual arugument keyword and stores data in the form of an array
+    }
+    function addValues(a1,a2,a3){
+             //Arguments                       //any time when ever u r going to define a JSfunction internally js is going tocreate a predfined keyword ARGUMENTS
+           //  console.log(arguments);  // if u give parms not give parms by default arguments keyword in js stores the values as array
+        var result = 0;
+        for(var i=0;i<arguments.length;i++){  //generic method capable of taking any no of params to a single fun
+        result += arguments[i];
+        }
+        console.log("the sum is:" + result);
+    }
+    
+    addValues(56,78,21);//even we are passing 3 parms but this method is expecting 2 values considering only 56 and 78 if i consider 3 para ie 21 should add a3
+    addValues(56,78);// this met is passing 2 parms one is undefined so num(56+78+undef) =NAN and  undefined result is NAN
+    addValues(56,78,21,33);//this meth is passing 4 params taking 3 params and givving result as same as first metho another params skips i.e 33
+    addValues(56,78,21,78,89,70,67);
+    addValues(56,78,67,56,45,34);
+    addValues(56,78,21,33,23,34,5,6,78)
+    </script>
+    </body>
+</html>

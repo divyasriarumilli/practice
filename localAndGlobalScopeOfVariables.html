@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local and global scope of variables</title>
+</head>
+<body>
+    <script type ="text/javascript">
+    var a=190;  //global variable/public
+    var name='teena';
+    var name;
+    var z=89;
+    function displayInfo(){
+        var b=90;  //local variable/private
+        console.log("the value of b is:"+b);
+        console.log("the value of a is:" +a);
+        name='raj';
+    }
+    console.log("the value of a is:" +a);
+    displayInfo();
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonistrating CSS Opacity property
+		</title>
+	</head>
+	<style type="text/css">
+		.block{
+			border: 1px solid;
+			height: 120px;
+			width: 120px;
+		}
+		.block1{
+			background: blueviolet;
+			text-align: center;
+			/*margin: 10px auto;*/
+			position: absolute;
+			top: 35%;
+			left: 45%;
+		}
+		.block2{
+			position: relative;
+			top: 50px;
+			background: greenyellow;
+			z-index: 300;
+			opacity: 0.5;
+
+		}
+		.block3{
+			position: relative;
+			background: hotpink;
+			left: 70px;
+			top: 30px;
+			z-index: 30;
+			opacity: 0.8;
+		}
+		.block4{
+			background: orangered;
+			z-index: 350px;
+		}
+		.block5{
+			background: forestgreen;
+		}
+	</style>
+	<body>
+		<div class="block1 block">block1</div>
+	</body>
+</html>

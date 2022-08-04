@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Passing params and returning values to the function...</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var readData = () => {
+        var p1,p2;
+        p1=prompt("enter p1 value:");
+        p1=parseInt(p1);
+        p2=prompt("enter p2 value:");
+        p2=parseInt(p2);
+        var total = addValues(p1,p2); //var total=sum;
+        console.log("the result is" + total);
+    }
+    var addValues = (a1, a2) => { //called function  
+        var sum=0;
+        sum=a1+a2;
+        return sum;
+
+    
+    }
+    readData();  //calling a function
+    
+    
+    </script>
+    
+</body>
+</html>

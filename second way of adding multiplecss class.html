@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonistrating adding second way of multiple css classes to single html elements
+		</title>
+		<style type="text/css">
+			/*.block{
+				font-size: 50px;
+				border: 10px solid;
+			}*/
+			.block1{
+				background: yellow;
+				color: red;
+			}
+			.block2{
+				background: blue;
+				color: white;
+			}
+			#block3{
+				background: green;
+				color: black;
+			}
+			.block4{
+				background: orange;
+				color: pink;
+			}
+			/*.block1, .block2, .block3 .block4{
+				font-size: 50px;
+				border: 10px solid;
+			}*/
+			.block1, .block2, #block3, .block4{
+				font-size: 50px;
+				border: 10px solid;
+			}
+		</style>
+		<body>
+			<div class="block1">
+				<div>Name:raj</div>
+				<div>age:21</div>
+				<div>gender:male</div>
+			</div>
+			<div class="block2">
+				<div>name:divya</div>
+				<div>age:24</div>
+				<div>gender:female</div>
+			</div>
+			<div id="block3">
+				<div>name:reena</div>
+				<div>age:25</div>
+				<div>gender:female</div>
+			</div>
+			<div class="block4">
+				<div>name:raj</div>
+				<div>age:29</div>
+				<div>gender:male</div>
+			</div>
+		</body>
+	</head>
+</html>
